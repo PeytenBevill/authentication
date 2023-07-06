@@ -11,14 +11,7 @@ PLEASE NOTE THAT PRIOR TO THIS ASSIGNMENT, YOU NEED TO HAVE FINISHED THE SECTION
 The other values can be found on your Auth0 profile after completing the pre-homework.
 
 ```yaml
-    DB_HOST=<mySQLWorkbench_Connect_Hostname>
-    DB_USER=root
-    DB_PASSWORD=<mySQLWorkbench_Connect_Password>
-    DB_DEFAULT_SCHEMA=<mySQLWorkbench_Connect_DefaultSchema> || admin
-    AUTH0_IDENTITY=my-express-app
-    AUTH0_DOMAIN=<findOnAuth0-APIs>>my-express-app>>test>>Node.js>>https://EVERYTHINGbtwHEREandHERE/oauth/token>
-    AUTH0_CLIENT_ID=<sameAsAbove_butFind"client_id"inTheBody>
-    AUTH0_CLIENT_SECRET=<sameAsAbove_butFind"client_secret"inTheBody>
+   
 ```
 
 > *NOTE: Don't include quotes in the `.env` file. If you're having trouble creating a connection with your DB in Google Cloud, try inputting the values directly into the `connection.js` file.*

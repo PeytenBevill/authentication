@@ -1,6 +1,7 @@
-1const axios = require('axios')
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+const axios = require('axios')
 const mysql = require('mysql')
-const bcrypt = require('bcrypt')
+// const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const pool = require('../sql/connection')
 const { handleSQLError } = require('../sql/error')

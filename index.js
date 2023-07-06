@@ -1,13 +1,16 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const usersRouter = require('./routers/users');
 const authRouter = require('./routers/auth');
+const {logger} = require('./middleware')
 
 const app = express();
 const port = process.env.PORT || 4001;
 
 app.use(bodyParser.json())
+app.use(logger)
 app.use('/users', usersRouter)
 app.use('/auth', authRouter)
 

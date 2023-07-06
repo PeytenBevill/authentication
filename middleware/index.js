@@ -1,7 +1,11 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 const jwksRsa = require('jwks-rsa');
 const jwt = require('express-jwt');
 
-const logger = () => {}
+const logger = (req, res, next) => {
+  console.log("Logging route:", req.path, new Date().toISOString())
+  next()
+}
 
 const checkJwt = jwt({
   secret: jwksRsa.expressJwtSecret({
